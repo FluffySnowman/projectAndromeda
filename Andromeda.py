@@ -19,3 +19,6 @@ print("\n\n")
 print("Type help to view commands")
 input1 = input("> ")
 print(input1)
+
+if (input1 == "help"):
+    print("All Commands: hackwifi, help,")
