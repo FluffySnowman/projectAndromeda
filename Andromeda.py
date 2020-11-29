@@ -46,13 +46,22 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, exit")
+        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, cls, exit")
+
+
+    #####################################
+    ############clear####################
+    #####################################
+
+
+    elif (input1 =="cls"):
+        print(chr(27) + "[2J")
 
 
     #####################################
     ##########hackwifi###################
     #####################################
-
+    
 
     elif (input1 == "hackwifi"):
 
@@ -115,12 +124,16 @@ while 1 < 2:
         # to search 
         query = text
         i = 1
+        h = 1
         for info in soup.find_all('h3'):
             n = str(i)
             print(str(i), ':- ', info.text)
             i = i + 1
+        i = i - 1
+        print()
         for j in search(query, tld="co.in", num=i, stop=i, pause=2): 
-            print(str(i), ':- ', j)
+            print(str(h), ':- ', str(j))
+            h = h + 1
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
