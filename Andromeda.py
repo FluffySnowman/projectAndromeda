@@ -3,6 +3,7 @@ import os
 import subprocess
 import time
 from colorama import Fore, Back, Style
+import TwitterSearch
 
 #Initialising red colour
 print(Fore.RED)
