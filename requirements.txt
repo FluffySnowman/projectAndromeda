@@ -3,3 +3,5 @@ colorama
 requests
 bs4
 lxml
+googlesearch
+google

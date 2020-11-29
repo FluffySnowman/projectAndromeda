@@ -9,6 +9,7 @@ from urllib.parse import urlencode, urlparse, parse_qs
 from lxml.html import fromstring
 from requests import get
 import random
+import re
 #import TwitterSearch
 
 #Initialising red colour
@@ -106,12 +107,20 @@ while 1 < 2:
         headers = {'user-agent': Agent}
         r = requests.get(url, headers=headers)
         soup = BeautifulSoup(r.text, 'lxml')
+        try: 
+            from googlesearch import search 
+        except ImportError:  
+            print("No module named 'google' found") 
+  
+        # to search 
+        query = text
         i = 1
         for info in soup.find_all('h3'):
             n = str(i)
             print(str(i), ':- ', info.text)
             i = i + 1
-
+        for j in search(query, tld="co.in", num=i, stop=i, pause=2): 
+            print(str(i), ':- ', j)
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
