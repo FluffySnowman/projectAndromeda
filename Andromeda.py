@@ -45,7 +45,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape")
+        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, exit")
 
 
     #####################################
@@ -71,11 +71,21 @@ while 1 < 2:
         output = stream.read()
         print(output)
         print("now enabling monitor mode for your network card")
-        inputmonitormodecard = input("Name of the card to put to monitor mode: ")
-        temp = ("airmon-ng start " + inputmonitormodecard)
+        input_monitor_mode_card = input("Name of the card to put to monitor mode: ")
+        temp = ("airmon-ng start " + input_monitor_mode_card)
         stream = os.popen(temp)
         output = stream.read()
         print(output)
+        input_start_airodumpng = input("Start airodump-ng?(y/n): ")
+        if (input_start_airodumpng == "y"):
+            print("starting airodump-ng")
+            time.sleep(0.2)
+            temp = ("airodump-ng " + input_monitor_mode_card)
+            stream = os.popen(temp)
+            output = stream.read()
+            print(output)
+        else:
+            print("exiting the hackwifi process")
 
 
     ####################################
