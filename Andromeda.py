@@ -2,6 +2,10 @@ import socket
 import os
 import subprocess
 import time
+from colorama import Fore, Back, Style
+
+#Initialising red colour
+print(Fore.RED)
 
 print("   ___              __                              __     ")
 time.sleep(0.2)
@@ -35,6 +39,8 @@ while 1 < 2:
 
 
         print("\nAll Commands: hackwifi, help,")
+
+
     #####################################
     ##########hackwifi###################
     #####################################
@@ -43,7 +49,7 @@ while 1 < 2:
     elif (input1 == "hackwifi"):
 
 
-        print("killing all network processes in 5 seconds")
+        print("killing all network processes in 5 seconds. Press cntl+c to stop")
         print(5)
         time.sleep(1)
         print(4)
@@ -63,6 +69,8 @@ while 1 < 2:
         stream = os.popen(temp)
         output = stream.read()
         print(output)
+
+
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
 
