@@ -16,12 +16,14 @@ time.sleep(0.2)
 print("                                                            ")
 time.sleep(0.2)
 print("\n\n")
+
+#
+
 print("Type help to view commands")
-input1 = input("> ")
-print(input1)
+input1 = input("Andromeda> ")
 
 if (input1 == "help"):
-    print("All Commands: hackwifi, help,")
+    print("\nAll Commands: hackwifi, help,")
 elif (input1 == "hackwifi"):
     print("killing all network processes in 5 seconds")
     print(5)
@@ -44,3 +46,4 @@ elif (input1 == "hackwifi"):
     output = stream.read()
     print(output)
 
+#
