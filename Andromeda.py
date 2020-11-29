@@ -45,7 +45,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("\nAll Commands: hackwifi, help, googlescrape")
+        print("Find the documentation at https://github.com/FluffySnowman/documentation.md\n\nAll Commands: hackwifi, help, googlescrape")
 
 
     #####################################
@@ -84,7 +84,7 @@ while 1 < 2:
 
     
     elif (input1 == "googlescrape"):
-        input_google_scrape = input("Scrape google for> ")
+        input_google_scrape = input("Scrape google for> ") 
 
         text = input_google_scrape
         url = 'https://google.com/search?q=' + text
@@ -96,10 +96,11 @@ while 1 < 2:
         headers = {'user-agent': Agent}
         r = requests.get(url, headers=headers)
         soup = BeautifulSoup(r.text, 'lxml')
-
+        i = 1
         for info in soup.find_all('h3'):
-            print(info.text)
-            print('#######')
+            n = str(i)
+            print(str(i), ':- ', info.text)
+            i = i + 1
 
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
@@ -112,11 +113,5 @@ while 1 < 2:
 
 #
 
-print("Exiting Andromeda in 3 seconds")
-time.sleep(1)
-print(3)
-time.sleep(1)
-print(2)
-time.sleep(1)
-print(1)
+print("Exiting Andromeda")
 exit()
