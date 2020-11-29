@@ -19,14 +19,14 @@ print("/_/  |_/_/ /_/\__,_/_/   \____/_/ /_/ /_/\___/\__,_/\__,_/  ")
 time.sleep(0.2)
 print("                                                            ")
 time.sleep(0.2)
-print("\n\n")
+print("")
+print("Type help to view commands\n\n")
 
 #
 
 while 1 < 2:
 
 
-    print("Type help to view commands")
     input1 = input("Andromeda> ")
 
 
@@ -49,7 +49,7 @@ while 1 < 2:
     elif (input1 == "hackwifi"):
 
 
-        print("killing all network processes in 5 seconds. Press cntl+c to stop")
+        print("killing all network processes in 5 seconds.CNTL+C TO STOP")
         print(5)
         time.sleep(1)
         print(4)
@@ -63,7 +63,7 @@ while 1 < 2:
         stream = os.popen("airmon-ng check kill")
         output = stream.read()
         print(output)
-        print("now enabling monitor mode for your wireless card")
+        print("now enabling monitor mode for your network card")
         inputmonitormodecard = input("Name of the card to put to monitor mode: ")
         temp = ("airmon-ng start " + inputmonitormodecard)
         stream = os.popen(temp)
