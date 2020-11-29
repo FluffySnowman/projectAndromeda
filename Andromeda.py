@@ -27,7 +27,7 @@ time.sleep(0.2)
 print("                                                            ")
 time.sleep(0.2)
 print("")
-print("Type help to view commands\n\n")
+print("Type help to view commands\nFind the docs at https://github.com/FluffySnowman/projectAndromeda/docs.md\n\n")
 
 #
 
@@ -45,7 +45,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the documentation at https://github.com/FluffySnowman/documentation.md\n\nAll Commands: hackwifi, help, googlescrape")
+        print("Find the documentation at https://github.com/FluffySnowman/projectAndromeda/docs.md\n\nAll Commands: hackwifi, help, googlescrape")
 
 
     #####################################
