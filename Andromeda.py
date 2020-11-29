@@ -3,6 +3,8 @@ import os
 import subprocess
 import time
 from colorama import Fore, Back, Style
+import requests 
+from bs4 import BeautifulSoup 
 #import TwitterSearch
 
 #Initialising red colour
@@ -73,11 +75,16 @@ while 1 < 2:
 
 
     ####################################
-    ############t###########
+    ############google scraper##########
     ####################################
 
     
-    elif (input1)
+    elif (input1 == "googlescrape"):
+        input_google_scrape = input("Scrape google for> ")
+        query = input_google_scrape
+        query = query.replace(' ', '+')
+        URL = f"https://google.com/search?q={query}"
+        
 
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
