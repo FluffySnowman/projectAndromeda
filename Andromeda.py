@@ -4,7 +4,10 @@ import subprocess
 import time
 from colorama import Fore, Back, Style
 import requests 
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
+from urllib.parse import urlencode, urlparse, parse_qs
+from lxml.html import fromstring
+from requests import get
 #import TwitterSearch
 
 #Initialising red colour
@@ -41,7 +44,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("\nAll Commands: hackwifi, help,")
+        print("\nAll Commands: hackwifi, help, googlescrape")
 
 
     #####################################
@@ -81,10 +84,23 @@ while 1 < 2:
     
     elif (input1 == "googlescrape"):
         input_google_scrape = input("Scrape google for> ")
-        query = input_google_scrape
-        query = query.replace(' ', '+')
-        URL = f"https://google.com/search?q={query}"
-        
+
+        text = 'python'
+        url = 'https://google.com/search?q=' + text
+        A = ("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36",
+        )
+ 
+        Agent = A[random.randrange(len(A))]
+ 
+        headers = {'user-agent': Agent}
+        r = requests.get(url, headers=headers)
+ 
+        soup = BeautifulSoup(r.text, 'lxml')
+        for info in soup.find_all('h3'):
+            print(info.text)
+            print('#######')
 
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
