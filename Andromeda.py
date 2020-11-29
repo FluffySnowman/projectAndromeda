@@ -19,31 +19,65 @@ print("\n\n")
 
 #
 
-print("Type help to view commands")
-input1 = input("Andromeda> ")
+while 1 < 2:
 
-if (input1 == "help"):
-    print("\nAll Commands: hackwifi, help,")
-elif (input1 == "hackwifi"):
-    print("killing all network processes in 5 seconds")
-    print(5)
-    time.sleep(1)
-    print(4)
-    time.sleep(1)
-    print(3)
-    time.sleep(1)
-    print(2)
-    time.sleep(1)
-    print(1)
-    time.sleep(1)
-    stream = os.popen("airmon-ng check kill")
-    output = stream.read()
-    print(output)
-    print("now enabling monitor mode for your wireless card")
-    inputmonitormodecard = input("Name of the card to put to monitor mode: ")
-    temp = ("airmon-ng start " + inputmonitormodecard)
-    stream = os.popen(temp)
-    output = stream.read()
-    print(output)
+
+    print("Type help to view commands")
+    input1 = input("Andromeda> ")
+
+
+    #####################################
+    ##########HELP#######################
+    #####################################
+
+
+    if (input1 == "help"):
+
+
+        print("\nAll Commands: hackwifi, help,")
+    #####################################
+    ##########hackwifi###################
+    #####################################
+
+
+    elif (input1 == "hackwifi"):
+
+
+        print("killing all network processes in 5 seconds")
+        print(5)
+        time.sleep(1)
+        print(4)
+        time.sleep(1)
+        print(3)
+        time.sleep(1)
+        print(2)
+        time.sleep(1)
+        print(1)
+        time.sleep(1)
+        stream = os.popen("airmon-ng check kill")
+        output = stream.read()
+        print(output)
+        print("now enabling monitor mode for your wireless card")
+        inputmonitormodecard = input("Name of the card to put to monitor mode: ")
+        temp = ("airmon-ng start " + inputmonitormodecard)
+        stream = os.popen(temp)
+        output = stream.read()
+        print(output)
+#BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
+
+
+    elif (input1 == "exit"):
+        break
+
+
 
 #
+
+print("Exiting Andromeda in 3 seconds")
+time.sleep(1)
+print(3)
+time.sleep(1)
+print(2)
+time.sleep(1)
+print(1)
+exit()
