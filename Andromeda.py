@@ -3,7 +3,7 @@ import os
 import subprocess
 import time
 from colorama import Fore, Back, Style
-import TwitterSearch
+#import TwitterSearch
 
 #Initialising red colour
 print(Fore.RED)
@@ -70,6 +70,14 @@ while 1 < 2:
         stream = os.popen(temp)
         output = stream.read()
         print(output)
+
+
+    ####################################
+    ############t###########
+    ####################################
+
+    
+    elif (input1)
 
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
