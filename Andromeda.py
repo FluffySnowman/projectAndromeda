@@ -10,6 +10,7 @@ from lxml.html import fromstring
 from requests import get
 import random
 import re
+import twint
 #import TwitterSearch
 
 #Initialising red colour
@@ -118,7 +119,7 @@ while 1 < 2:
         soup = BeautifulSoup(r.text, 'lxml')
         try: 
             from googlesearch import search 
-        except ImportError:  
+        except ImportError:
             print("No module named 'google' found") 
   
         # to search 
