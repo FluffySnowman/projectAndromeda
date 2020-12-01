@@ -47,7 +47,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, cls, exit")
+        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, twitterscrape, cls, exit")
 
 
     #####################################
@@ -136,12 +136,39 @@ while 1 < 2:
             print(str(h), ':- ', str(j))
             h = h + 1
 
+
+    ####################################
+    ###########twitter scraper##########
+    ####################################
+
+    
+    elif (input1 == "twitterscrape"):
+        while 1 < 2:
+            print("1:- Username")
+            print("2:- Something")
+            twint_search_option = input("Select a number to scrape for: ")
+
+            if (twint_search_option == "1"):
+                print("Loading up username search functions")
+                break
+            elif (twint_search_option == "2"):
+                print()
+                break
+        
+
+        
+
+
+
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
 
     elif (input1 == "exit"):
         break
+    
 
+    else:
+        print(Fore.GREEN+"ENTER VALID COMMANDS PLEASE"+Fore.RED)
 
 
 #
