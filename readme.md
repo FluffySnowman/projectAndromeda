@@ -1,4 +1,5 @@
 # Project Andromeda
+A collection of tools to help a user collect data efficiently
 
 ### Installation
 
