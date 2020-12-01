@@ -144,7 +144,7 @@ while 1 < 2:
     
     elif (input1 == "twitterscrape"):
         while 1 < 2:
-            print("1:- Username")
+            print("1:- Followers")
             print("2:- Something")
             twint_search_option = input("Select a number to scrape for: ")
 
@@ -155,7 +155,18 @@ while 1 < 2:
                 print()
                 break
         
+        if (twint_search_option == "1"):
+            twintvariable = twint.Config()
+            twint_username_followers = input("Username: ")
+            twintvariable.Username = twint_username_followers
+            twintvariable.Store_object = True
+            twintvariable.User_full = True
+            
+            twint.run.Followers(twintvariable)
 
+
+        elif (twint_search_option == "2"):
+            print()
         
 
 
