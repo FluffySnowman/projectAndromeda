@@ -167,12 +167,18 @@ while 1 < 2:
             
             twintvariable = twint.Config()
             twint_username_followers = input("Username: ")
-            twintvariable.Store_object = True
-            twintvariable.User_full = True
             twintvariable.Username = (twint_username_followers)
-            
+            twint_followers_savefile = input("Path to save followers list to: ")
+
             twint.run.Followers(twintvariable)
+            target_followers = twint.output.users_list
+            K_followers = []
+            for user in target_followers:
+                if user.followers >= 1:
+                    K_followers.append(user)
             
+
+
 
         elif (twint_search_option == "2"):
             print()
