@@ -12,6 +12,9 @@ import random
 import re
 import twint
 import sys
+
+stdout_fileno = sys.stdout
+
 #import TwitterSearch
 
 #Initialising red colour
@@ -166,6 +169,7 @@ while 1 < 2:
         
         if (twint_search_option == "1"):
             
+
             twintvariable = twint.Config()
             twint_username_followers = input("Username: ")
             twintvariable.Username = (twint_username_followers)
@@ -176,10 +180,8 @@ while 1 < 2:
             twint.run.Followers(twintvariable)
 
             sys.stdout.close()
-            print()
 
-            
-
+            sys.stdout = stdout_fileno
 
 
         elif (twint_search_option == "2"):
