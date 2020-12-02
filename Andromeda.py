@@ -143,6 +143,9 @@ while 1 < 2:
 
     
     elif (input1 == "twitterscrape"):
+        print(Fore.BLUE)
+
+
         while 1 < 2:
             print("\n1:- Followers")
             print("2:- Something")
@@ -161,19 +164,21 @@ while 1 < 2:
                 print(Fore.GREEN+"enter a correct number"+Fore.RED)
         
         if (twint_search_option == "1"):
-
+            
             twintvariable = twint.Config()
             twint_username_followers = input("Username: ")
-            twintvariable.Username = twint_username_followers
             twintvariable.Store_object = True
             twintvariable.User_full = True
+            twintvariable.Username = (twint_username_followers)
             
             twint.run.Followers(twintvariable)
-
+            
 
         elif (twint_search_option == "2"):
             print()
-        
+
+
+        print(Fore.RED)
 
 
 

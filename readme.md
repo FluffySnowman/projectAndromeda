@@ -2,7 +2,7 @@
 A collection of tools to help a user collect data efficiently
 
 ### Requirements
-For the twitter scraper you must have twint installed for the cli. Otherwise the rest can be installed using the commands listed below.
+
 
 ### Installation
 
