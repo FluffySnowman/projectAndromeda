@@ -11,6 +11,7 @@ from requests import get
 import random
 import re
 import twint
+import sys
 #import TwitterSearch
 
 #Initialising red colour
@@ -170,12 +171,13 @@ while 1 < 2:
             twintvariable.Username = (twint_username_followers)
             twint_followers_savefile = input("Path to save followers list to: ")
 
+            print(Fore.GREEN+"\n\nFollowers will be printed and saved to the file in plain text\n\n"+Fore.BLUE)
+            sys.stdout = open(twint_followers_savefile, "w")
             twint.run.Followers(twintvariable)
-            target_followers = twint.output.users_list
-            K_followers = []
-            for user in target_followers:
-                if user.followers >= 1:
-                    K_followers.append(user)
+
+            sys.stdout.close()
+            print()
+
             
 
 
