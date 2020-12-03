@@ -132,12 +132,12 @@ while 1 < 2:
         h = 1
         for info in soup.find_all('h3'):
             n = str(i)
-            print(str(i), ':- ', info.text)
+            print(Fore.GREEN+str(i), ':- ',Fore.YELLOW+ info.text+Fore.RED)
             i = i + 1
         i = i - 1
         print()
         for j in search(query, tld="co.in", num=i, stop=i, pause=2): 
-            print(str(h), ':- ', str(j))
+            print(Fore.GREEN+str(h), ':- ',Fore.YELLOW+ str(j)+Fore.RED)
             h = h + 1
 
 
@@ -175,7 +175,7 @@ while 1 < 2:
             twintvariable.Username = (twint_username_followers)
             twint_followers_savefile = input("Path to save followers list to: ")
 
-            print(Fore.GREEN+"\n\nFollowers will be printed and saved to the file in plain text\n\n"+Fore.BLUE)
+            print(Fore.GREEN+"\n\nFollowers will be printed and saved to the file in plain text (this may take a while)\n\n"+Fore.BLUE)
             sys.stdout = open(twint_followers_savefile, "w")
             twint.run.Followers(twintvariable)
 
