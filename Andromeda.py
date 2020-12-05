@@ -51,7 +51,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: wifiaudit, help, googlescrape, twitterscrape, cls, exit")
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, cls, exit"+Fore.RED)
 
 
     #####################################
@@ -86,11 +86,12 @@ while 1 < 2:
         output = stream.read()
         print(output)
         print("now enabling monitor mode for your network card")
-        input_monitor_mode_card = input("Name of the card to put to monitor mode: ")
-        temp = ("airmon-ng start " + input_monitor_mode_card)
+        input_wifi_card = input("Name of the card to put to monitor mode: ")
+        temp = ("airmon-ng start " + input_wifi_card)
         stream = os.popen(temp)
         output = stream.read()
         print(output)
+        input_monitor_mode_card = input("Name of the card IN monitor mode: ")
         input_start_airodumpng = input("Start airodump-ng?(y/n): ")
         if (input_start_airodumpng == "y"):
             print("starting airodump-ng")

@@ -52,3 +52,13 @@ Then enter the path you want the scrape's result's to be saved to;
 Press enter and watch Andromeda magically work and come up with results.
 
 #### Google Scraping
+
+To start the google scraper use this command:
+
+```bash
+Andromeda> googlescrape
+```
+
+You will be prompted with what to scrape for. After typing in your choice press enter and wait for the results.
+
+#### 
