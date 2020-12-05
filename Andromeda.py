@@ -155,7 +155,7 @@ while 1 < 2:
 
         while 1 < 2:
             print("\n1:- Followers")
-            print("2:- Something")
+            print("2:- Profile Information")
             print("3:- Exit\n")
             twint_search_option = input("Select a number to scrape for: ")
 
@@ -178,7 +178,7 @@ while 1 < 2:
             twintvariable.Username = (twint_username_followers)
             twint_followers_savefile = input("Path to save followers list to: ")
 
-            print(Fore.GREEN+"\n\nFollowers will be printed and saved to the file in plain text (this may take a while)\n\n"+Fore.BLUE)
+            print(Fore.GREEN+"\n\nFollowers will be printed or/and saved to the file in plain text (this may take a while)\n\n"+Fore.BLUE)
             sys.stdout = open(twint_followers_savefile, "w")
             twint.run.Followers(twintvariable)
 
@@ -188,6 +188,21 @@ while 1 < 2:
 
 
         elif (twint_search_option == "2"):
+
+
+            twintvariable = twint.Config()
+            twint_username_profileinfo = input("Profile Username: ")
+            twintvariable.Username = twint_username_profileinfo
+            twint_profileinfo_savefile = input("Path to save profile info to: ")
+            
+            print(Fore.GREEN+"\n\nProfile info will be printed or/and saved to the file in plain text\n\n"+Fore.BLUE)    
+            sys.stdout = open(twint_profileinfo_savefile, "w")
+            twint.run.Lookup(twintvariable)
+
+            sys.stdout.close()
+
+            sys.stdout = stdout_fileno 
+
             print()
 
 
