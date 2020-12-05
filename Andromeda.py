@@ -214,7 +214,7 @@ while 1 < 2:
             twintvariable = twint.Config()
             twint_username_tweets = input("Username: ")
             twintvariable.Username = twint_username_tweets
-            twint_tweets_limit = input("Limit of tweets: ")
+            twint_tweets_limit = input("Number of tweets to scrape: ")
             twintvariable.Limit = twint_tweets_limit
             twint_tweets_savefile = input("Path to save tweets to: ")
             
