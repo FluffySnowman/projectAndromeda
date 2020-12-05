@@ -110,7 +110,6 @@ while 1 < 2:
     
     elif (input1 == "googlescrape"):
         input_google_scrape = input("Scrape google for> ")
-        input_google_save_1 = input("save results to file?(y/n) ") 
 
         text = input_google_scrape
         url = 'https://google.com/search?q=' + text
@@ -131,12 +130,14 @@ while 1 < 2:
         query = text
         i = 1
         h = 1
+        print(Fore.MAGENTA+"Title scrapes:- "+Fore.RED)
         for info in soup.find_all('h3'):
             n = str(i)
             print(Fore.GREEN+str(i), ':- ',Fore.YELLOW+ info.text+Fore.RED)
             i = i + 1
         i = i - 1
         print()
+        print(Fore.MAGENTA+"Link scrapes:- "+Fore.RED)
         for j in search(query, tld="co.in", num=i, stop=i, pause=2): 
             print(Fore.GREEN+str(h), ':- ',Fore.YELLOW+ str(j)+Fore.RED)
             h = h + 1
