@@ -51,7 +51,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: hackwifi, help, googlescrape, twitterscrape, cls, exit")
+        print("Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\nAll Commands: wifiaudit, help, googlescrape, twitterscrape, cls, exit")
 
 
     #####################################
@@ -68,7 +68,7 @@ while 1 < 2:
     #####################################
     
 
-    elif (input1 == "hackwifi"):
+    elif (input1 == "wifiaudit"):
 
 
         print("killing all network processes in 5 seconds.CNTL+C TO STOP")
