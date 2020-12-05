@@ -37,7 +37,7 @@ python3 Andromeda.py
 
 ### Basics
 
-##### Twitter Scraping
+#### Twitter Scraping
 
 First lets start with twitter scraping. To start the twitter scraping module do:
 
@@ -51,4 +51,4 @@ Enter the prompted question's answer (username etc);
 Then enter the path you want the scrape's result's to be saved to;
 Press enter and watch Andromeda magically work and come up with results.
 
-##### Google Scraping
+#### Google Scraping
