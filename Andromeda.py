@@ -156,7 +156,8 @@ while 1 < 2:
         while 1 < 2:
             print("\n1:- Followers")
             print("2:- Profile Information")
-            print("3:- Exit\n")
+            print("3:- Tweets")
+            print("4:- Exit\n")
             twint_search_option = input("Select a number to scrape for: ")
 
             if (twint_search_option == "1"):
@@ -165,7 +166,10 @@ while 1 < 2:
             elif (twint_search_option == "2"):
                 print()
                 break
-            elif (twint_search_option == "3" or twint_search_option == "exit"):
+            elif (twint_search_option == "3"):
+                print()
+                break
+            elif (twint_search_option == "4" or twint_search_option == "exit"):
                 break
             else:
                 print(Fore.GREEN+"enter a correct number"+Fore.RED)
@@ -203,7 +207,26 @@ while 1 < 2:
 
             sys.stdout = stdout_fileno 
 
-            print()
+        
+        elif (twint_search_option == "3"):
+
+
+            twintvariable = twint.Config()
+            twint_username_tweets = input("Username: ")
+            twintvariable.Username = twint_username_tweets
+            twint_tweets_limit = input("Limit of tweets: ")
+            twintvariable.Limit = twint_tweets_limit
+            twint_tweets_savefile = input("Path to save tweets to: ")
+            
+            print(Fore.GREEN+"\n\nTweets will be printed or/and saved to the file in plain text\n\n"+Fore.BLUE)    
+            sys.stdout = open(twint_tweets_savefile, "w")
+            twint.run.Search(twintvariable)
+
+            sys.stdout.close()
+
+            sys.stdout = stdout_fileno 
+        
+        print()
 
 
         print(Fore.RED)
