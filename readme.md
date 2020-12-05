@@ -17,7 +17,7 @@ sudo python3 -m pip install -r requirements.txt
 ```
 ### Executing
 
-Using a shell as administrator/root use python to run andromeda.
+Using a shell as administrator/root/superuser use python to run andromeda.
 
 ```bash
 python3 Andromeda.py
