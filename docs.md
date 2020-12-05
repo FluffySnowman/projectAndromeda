@@ -9,6 +9,8 @@ First a shell is required to run Andromeda (on windows: cmd or powershell, on ma
 
 Python version 3 or above is required (3.8 or above if possible).
 
+For the wifi auditing tools your device must have the aircrack-ng binaries installed.
+
 Your device must have libxml2 and libxslt installed for for the python module lxml to function properly.
 
 Next you must install the required python modules. To do this do:-
@@ -32,3 +34,21 @@ cd projectAndromeda
 
 python3 Andromeda.py
 ```
+
+### Basics
+
+##### Twitter Scraping
+
+First lets start with twitter scraping. To start the twitter scraping module do:
+
+```bash
+Andromeda> twitterscrape
+```
+
+You will be prompted with some options on what to scrape for. Enter a number(respective to the option) and press enter to continue.
+
+Enter the prompted question's answer (username etc);
+Then enter the path you want the scrape's result's to be saved to;
+Press enter and watch Andromeda magically work and come up with results.
+
+##### Google Scraping
