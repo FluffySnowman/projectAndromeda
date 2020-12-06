@@ -182,7 +182,7 @@ while 1 < 2:
             twintvariable.Username = (twint_username_followers)
             twint_followers_savefile = input("Path to save followers list to: ")
 
-            print(Fore.GREEN+"\n\nFollowers will be printed or/and saved to the file in plain text (this may take a while)\n\n"+Fore.BLUE)
+            print(Fore.GREEN+"\n\nFollowers will be saved to the file in plain text (this may take a while)\n\n"+Fore.BLUE)
             sys.stdout = open(twint_followers_savefile, "w")
             twint.run.Followers(twintvariable)
 
@@ -199,7 +199,7 @@ while 1 < 2:
             twintvariable.Username = twint_username_profileinfo
             twint_profileinfo_savefile = input("Path to save profile info to: ")
             
-            print(Fore.GREEN+"\n\nProfile info will be printed or/and saved to the file in plain text\n\n"+Fore.BLUE)    
+            print(Fore.GREEN+"\n\nProfile info will be saved to the file in plain text\n\n"+Fore.BLUE)    
             sys.stdout = open(twint_profileinfo_savefile, "w")
             twint.run.Lookup(twintvariable)
 
@@ -218,7 +218,7 @@ while 1 < 2:
             twintvariable.Limit = twint_tweets_limit
             twint_tweets_savefile = input("Path to save tweets to: ")
             
-            print(Fore.GREEN+"\n\nTweets will be printed or/and saved to the file in plain text\n\n"+Fore.BLUE)    
+            print(Fore.GREEN+"\n\nTweets will be saved to the file in plain text\n\n"+Fore.BLUE)    
             sys.stdout = open(twint_tweets_savefile, "w")
             twint.run.Search(twintvariable)
 
