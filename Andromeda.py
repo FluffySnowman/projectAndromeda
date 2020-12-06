@@ -109,7 +109,8 @@ while 1 < 2:
 
     
     elif (input1 == "googlescrape"):
-        input_google_scrape = input("Scrape google for> ") 
+        input_google_scrape = input("Scrape google for> ")
+        input_google_save_1 = input("save results to file?(y/n) ") 
 
         text = input_google_scrape
         url = 'https://google.com/search?q=' + text
