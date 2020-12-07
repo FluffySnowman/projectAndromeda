@@ -51,6 +51,8 @@ Enter the prompted question's answer (username etc);
 Then enter the path you want the scrape's result's to be saved to;
 Press enter and watch Andromeda magically work and come up with results.
 
+Some errors may pop up so check the fixes over [here](https://github.com/FluffySnowman/projectAndromeda/blob/master/errors.md)
+
 #### Google Scraping
 
 To start the google scraper use this command:
