@@ -55,7 +55,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, cls, exit"+Fore.RED)
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, yt-download,cls, exit"+Fore.RED)
 
 
     #####################################
@@ -247,7 +247,6 @@ while 1 < 2:
         print(Fore.CYAN)
 
         video_url = input("Please enter the YouTube Video URL: ")
-        # Download and convert to mp3 and store in downloads folder
         video_info = youtube_dl.YoutubeDL().extract_info(
             url=video_url, download=False
         )
@@ -264,8 +263,6 @@ while 1 < 2:
         }
         with youtube_dl.YoutubeDL(options) as ydl:
             ydl.download([video_info['webpage_url']])
-
-        # Open the file once it has been downloaded
 
 
         print(Fore.RED)
