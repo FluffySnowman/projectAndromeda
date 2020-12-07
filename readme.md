@@ -3,6 +3,8 @@ A collection of tools to help a user collect data efficiently
 
 Find the docs [here](https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md)
 
+Find fixes to errors [here](https://github.com/FluffySnowman/projectAndromeda/blob/master/errors.md)
+
 ### Requirements
 
 
