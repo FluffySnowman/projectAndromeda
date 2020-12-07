@@ -266,7 +266,6 @@ while 1 < 2:
             ydl.download([video_info['webpage_url']])
 
         # Open the file once it has been downloaded
-        subprocess.call(["open", filename])
 
 
         print(Fore.RED)
