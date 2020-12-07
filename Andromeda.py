@@ -55,7 +55,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, yt-download,cls, exit"+Fore.RED)
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, yt-download, cls, exit"+Fore.RED)
 
 
     #####################################
