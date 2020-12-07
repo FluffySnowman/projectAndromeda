@@ -6,4 +6,4 @@ lxml
 google
 twint
 numpy==1.19.3
-pytube
+youtube_dl
