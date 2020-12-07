@@ -5,3 +5,4 @@ bs4
 lxml
 google
 twint
+numpy==1.19.3
