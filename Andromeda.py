@@ -1,17 +1,21 @@
+from __future__ import unicode_literals
+from bs4 import BeautifulSoup
+from urllib.parse import urlencode, urlparse, parse_qs
+from lxml.html import fromstring
+from requests import get
 import socket
 import os
 import subprocess
 import time
 from colorama import Fore, Back, Style
 import requests 
-from bs4 import BeautifulSoup
-from urllib.parse import urlencode, urlparse, parse_qs
-from lxml.html import fromstring
-from requests import get
 import random
 import re
 import twint
 import sys
+import youtube_dl
+
+import youtube_dl
 
 stdout_fileno = sys.stdout
 
@@ -229,7 +233,44 @@ while 1 < 2:
         print()
 
 
+        print(Fore.RED)  
+
+
+    ####################################
+    #########youtube downloader#########
+    ####################################
+
+
+    elif (input1 == "yt-download"):
+
+        
+        print(Fore.CYAN)
+
+        video_url = input("Please enter the YouTube Video URL: ")
+        # Download and convert to mp3 and store in downloads folder
+        video_info = youtube_dl.YoutubeDL().extract_info(
+            url=video_url, download=False
+        )
+        filename = f"{video_info['title']}.mp3"
+        options = {
+            'format': 'bestaudio/best',
+            'keepvideo': False,
+            'outtmpl': filename,
+            'postprocessors': [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }]
+        }
+        with youtube_dl.YoutubeDL(options) as ydl:
+            ydl.download([video_info['webpage_url']])
+
+        # Open the file once it has been downloaded
+        subprocess.call(["open", filename])
+
+
         print(Fore.RED)
+
 
 
 
