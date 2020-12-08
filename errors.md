@@ -12,7 +12,7 @@ pip3 install --upgrade -e git+https://github.com/twintproject/twint.git@origin/m
 
 ### ERROR: Unable to extract JS player URL
 
-This error is related to the youtube downloader function. After
+This error is related to the youtube downloader function.
 
 Fix:- update youtube-dl using pip
 
