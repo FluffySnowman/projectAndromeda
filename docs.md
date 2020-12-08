@@ -63,4 +63,18 @@ Andromeda> googlescrape
 
 You will be prompted with what to scrape for. After typing in your choice press enter and wait for the results.
 
+#### Youtube to mp3 downloading
+
+To start the youtube to mp3 downloading function use this command:
+
+```bash
+Andromeda> yt-download
+```
+
+You will be asked the link for the youtube video. Enter the link and hit enter to continue. The Download process will begin. 
+
+NOTE:- It will take a variable amount of time to download depeding on your internet speed.
+
+The download will be saved as a '.mp3' file in the current directory/folder that you are in- that is the projectAndromeda folder that you had cloned earlier unless you have made changes to it.
+
 #### 
