@@ -14,12 +14,21 @@ import re
 import twint
 import sys
 import youtube_dl
+import signal
 
-import youtube_dl
+
+#GLOBAL VARIABLES AND FUNCTIONS#
+
+
+def signal_handler(sig, frame):
+    print('You pressed Ctrl+C!')
+    sys.exit(0)
+
 
 stdout_fileno = sys.stdout
 
-#import TwitterSearch
+
+#################################
 
 #Initialising red colour
 print(Fore.RED)
@@ -178,6 +187,7 @@ while 1 < 2:
             else:
                 print(Fore.GREEN+"enter a correct number"+Fore.RED)
         
+        
         if (twint_search_option == "1"):
             
 
@@ -268,7 +278,6 @@ while 1 < 2:
         print(Fore.RED)
 
 
-
     #####################################
     ##########shell commands#############
     #####################################
@@ -277,13 +286,16 @@ while 1 < 2:
     elif (input1 == "shell"):
         print(Fore.CYAN+"NOTE:- Commands that run constantly and require a interrupt such as cntl+c will not work currently. We are trying to fix this issue. Pressing cntl+c will terminate project Andromeda itself."+Fore.RED)
         while (1 < 2): 
-            shellinput=input("Andromeda:~# ")
-            if (shellinput == "exit"):
-                break
-            print(Fore.BLUE+"[*]"+Fore.WHITE+" exec: "+shellinput+Fore.RED+"\n")
-            stream = os.popen(shellinput)
-            output = stream.read()
-            print(Fore.GREEN+output+Fore.RED)
+            try:
+                shellinput=input("Andromeda:~# ")
+                if (shellinput == "exit"):
+                    break
+                print(Fore.BLUE+"[*]"+Fore.WHITE+" exec: "+shellinput+Fore.RED+"\n")
+                stream = os.popen(shellinput)
+                output = stream.read()
+                print(Fore.GREEN+output+Fore.RED)
+            except KeyboardInterrupt:
+                print(Fore.LIGHTYELLOW_EX+"Exiting current process"+Fore.RED)
         print(Fore.GREEN+"\nExiting shell\n"+Fore.RED)
 
     
