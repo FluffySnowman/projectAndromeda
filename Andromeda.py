@@ -275,17 +275,21 @@ while 1 < 2:
 
 
     elif (input1 == "shell"):
-        while (1 < 2):
-            print(Fore.CYAN+"NOTE:- Commands that run constantly and require a interrupt such as cntl+c will not work currently. We are trying to fix this issue."+Fore.Red)
+        print(Fore.CYAN+"NOTE:- Commands that run constantly and require a interrupt such as cntl+c will not work currently. We are trying to fix this issue. Pressing cntl+c will terminate project Andromeda itself."+Fore.RED)
+        while (1 < 2): 
             shellinput=input("Andromeda:~# ")
+            if (shellinput == "exit"):
+                break
+            print(Fore.BLUE+"[*]"+Fore.WHITE+" exec: "+shellinput+Fore.RED+"\n")
             stream = os.popen(shellinput)
             output = stream.read()
-            print(output)
+            print(Fore.GREEN+output+Fore.RED)
+        print(Fore.GREEN+"\nExiting shell\n"+Fore.RED)
 
-    """
-    elif ((input1 != "wifiaudit" and input1 != "googlescrape" and input1 != "help" and input1 != "twitterscrape" and input1 != "yt-download" and input1 != "cls" and input1 != "exit")):
-        print()
-    """
+    
+    #elif ((input1 != "wifiaudit" and input1 != "googlescrape" and input1 != "help" and input1 != "twitterscrape" and input1 != "yt-download" and input1 != "cls" and input1 != "exit")):
+    #    print()
+    
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
