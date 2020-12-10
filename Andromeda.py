@@ -64,7 +64,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: wifiaudit, help, googlescrape, twitterscrape, yt-download, cls, exit"+Fore.RED)
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"All Commands: shell, wifiaudit, help, googlescrape, twitterscrape, yt-download, cls, exit"+Fore.RED)
 
 
     #####################################
@@ -284,7 +284,7 @@ while 1 < 2:
 
 
     elif (input1 == "shell"):
-        print(Fore.CYAN+"NOTE:- Commands that run constantly and require a interrupt such as cntl+c will not work currently. We are trying to fix this issue. Pressing cntl+c will terminate project Andromeda itself."+Fore.RED)
+        print(Fore.CYAN+"NOTE:- This shell is a little buggy with commands that run with interrupts such as opening applications in the terminal etc."+Fore.RED)
         while (1 < 2): 
             try:
                 shellinput=input("Andromeda:~# ")
