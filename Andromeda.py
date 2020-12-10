@@ -286,7 +286,7 @@ while 1 < 2:
         print(Fore.CYAN+"NOTE:- This shell is a little buggy with commands that run with interrupts such as opening applications in the terminal etc."+Fore.RED)
         while (1 < 2): 
             try:
-                shellinput=input("Andromeda:~# ")
+                shellinput=input("Andromeda"+Fore.WHITE+":~# "+Fore.RED)
                 if (shellinput == "exit"):
                     break
                 print(Fore.BLUE+"[*]"+Fore.WHITE+" exec: "+shellinput+Fore.RED+"\n")
