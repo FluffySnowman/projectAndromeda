@@ -165,7 +165,6 @@ while 1 < 2:
     elif (input1 == "twitterscrape"):
         print(Fore.BLUE)
 
-
         while 1 < 2:
             print("\n1:- Followers")
             print("2:- Profile Information")
