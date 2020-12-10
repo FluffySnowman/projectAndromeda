@@ -24,7 +24,7 @@ stdout_fileno = sys.stdout
 #Initialising red colour
 print(Fore.RED)
 
-print("   ___              __                              __     ")
+print("    ___              __                              __     ")
 time.sleep(0.2)
 print("   /   |  ____  ____/ /________  ____ ___  ___  ____/ /___ _")
 time.sleep(0.2)
@@ -62,7 +62,7 @@ while 1 < 2:
     ############clear####################
     #####################################
 
-
+    
     elif (input1 =="cls"):
         print(chr(27) + "[2J")
 
@@ -269,6 +269,23 @@ while 1 < 2:
 
 
 
+    #####################################
+    ##########shell commands#############
+    #####################################
+
+
+    elif (input1 == "shell"):
+        while (1 < 2):
+            print(Fore.CYAN+"NOTE:- Commands that run constantly and require a interrupt such as cntl+c will not work currently. We are trying to fix this issue."+Fore.Red)
+            shellinput=input("Andromeda:~# ")
+            stream = os.popen(shellinput)
+            output = stream.read()
+            print(output)
+
+    """
+    elif ((input1 != "wifiaudit" and input1 != "googlescrape" and input1 != "help" and input1 != "twitterscrape" and input1 != "yt-download" and input1 != "cls" and input1 != "exit")):
+        print()
+    """
 
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
