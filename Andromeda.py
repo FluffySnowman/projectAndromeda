@@ -48,7 +48,11 @@ time.sleep(0.2)
 print("")
 print("Type help to view commands\nFind the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n")
 
+
+
 #
+
+
 
 while 1 < 2:
 
@@ -313,7 +317,11 @@ while 1 < 2:
         print(Fore.GREEN+"ENTER VALID COMMANDS PLEASE"+Fore.RED)
 
 
+
+
 #
+
+
 
 print("Exiting Andromeda")
 exit()
