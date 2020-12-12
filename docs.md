@@ -116,4 +116,3 @@ Andromeda>
 ```
 
 And there you are now back to good old Andromeda.
-
