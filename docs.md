@@ -35,6 +35,15 @@ cd projectAndromeda
 python3 Andromeda.py
 ```
 
+### Exiting
+
+To exit Andromeda Type in exit like so:-
+
+```bash
+Andromeda> exit
+Exiting Andromeda
+```
+
 <hr>
 
 
