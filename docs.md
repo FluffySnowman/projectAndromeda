@@ -35,7 +35,8 @@ cd projectAndromeda
 python3 Andromeda.py
 ```
 
-### Basics
+<hr>
+
 
 #### Twitter Scraping
 
@@ -77,4 +78,33 @@ NOTE:- It will take a variable amount of time to download depeding on your inter
 
 The download will be saved as a '.mp3' file in the current directory/folder that you are in- that is the projectAndromeda folder that you had cloned earlier unless you have made changes to it.
 
-#### 
+#### Using the shell
+
+To start the shell use this command:
+
+```bash
+Andromeda> shell
+```
+
+Depending on your operating system's default shell, a shell will spawn (example: for windows it could be cmd.exe or for linux it could be bash or zsh or ash etc.).
+
+You will be presented with this interface. The ":~#" after Andromeda indicating that a shell is running:-
+
+```bash
+Andromeda:~#
+```
+
+There are now infinite possibilities of what you can do with this shell. Just like a normal terminal you can navigate through the file system, have fun with files and much more!
+
+To exit the shell type in exit like so(Pressing cntl+c will only trigger an exception and the shell will be run again like in a normal terminal):-
+
+```bash
+Andromeda:~# exit
+
+Exiting shell
+
+Andromeda> 
+```
+
+And there you are now back to good old Andromeda.
+
