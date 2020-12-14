@@ -174,7 +174,8 @@ while 1 < 2:
             print("\n1:- Followers")
             print("2:- Profile Information")
             print("3:- Tweets")
-            print("4:- Exit\n")
+            print("4:- Most liked tweets")
+            print("5:- Exit\n")
             twint_search_option = input("Select a number to scrape for: ")
 
             if (twint_search_option == "1"):
