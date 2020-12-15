@@ -187,7 +187,10 @@ while 1 < 2:
             elif (twint_search_option == "3"):
                 print()
                 break
-            elif (twint_search_option == "4" or twint_search_option == "exit"):
+            elif (twint_search_option == "4"):
+                print()
+                break
+            elif (twint_search_option == "5" or twint_search_option == "exit"):
                 break
             else:
                 print(Fore.GREEN+"enter a correct number"+Fore.RED)
