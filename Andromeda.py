@@ -248,6 +248,14 @@ while 1 < 2:
 
             sys.stdout = stdout_fileno 
         
+
+        elif (twint_search_option == "4"):
+
+
+            twintvariable = twint.Config()
+            
+
+
         print()
 
 
