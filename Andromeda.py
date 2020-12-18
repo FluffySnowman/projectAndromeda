@@ -329,7 +329,7 @@ while 1 < 2:
     
 
     else:
-        print(Fore.GREEN+"Andromeda: " + input1 + " command not found"+Fore.RED)
+        print(Fore.GREEN + "Andromeda: " + input1 + " command not found" + Fore.RED)
 
 
 
