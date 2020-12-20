@@ -321,11 +321,13 @@ while 1 < 2:
     #    print()
     
 
+
 #BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
 
 
+
     elif (input1 == "exit"):
-        break
+        break 
     
 
     else:
