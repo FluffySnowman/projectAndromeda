@@ -83,7 +83,7 @@ while 1 < 2:
 
 
     #####################################
-    ##########hackwifi###################
+    ##########wifiaudit##################
     #####################################
     
 
@@ -149,8 +149,12 @@ while 1 < 2:
                     if(conn == 0) :
                         print ('PORT %d: IS OPEN' % (i,))
                     s.close()
+                    
                 print('Time taken:', time.time() - startTime)
-
+            
+            elif wifiauditinput == "exit":
+                print(Fore.LIGHTBLUE_EX+"Exiting wifi audit module"+Fore.RED)
+                break
 
 
 
