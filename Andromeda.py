@@ -134,17 +134,20 @@ while 1 < 2:
             elif wifiauditinput == "portscan":
 
                 scanportsinput = input("Host to be scanned> ")
+
                 startTime = time.time()
                 t_IP = gethostbyname(scanportsinput)
+
                 print('Starting scan on host: ', t_IP)
+                print(Fore.CYAN + "RANGE: 50 - 500" + Fore.RED)
                 print("(This may take a while ... )")
-   
+
                 for i in range(50, 500):
                     s = socket(AF_INET, SOCK_STREAM)
       
                     conn = s.connect_ex((t_IP, i))
                     if(conn == 0) :
-                        print ('Port %d: OPEN' % (i,))
+                        print ('PORT %d: IS OPEN' % (i,))
                     s.close()
                 print('Time taken:', time.time() - startTime)
 
