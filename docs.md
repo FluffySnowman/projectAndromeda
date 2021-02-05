@@ -46,8 +46,26 @@ Exiting Andromeda
 
 <hr>
 
+## Wifi auditing
 
-#### Twitter Scraping
+#### Port Scanning
+
+To scan ports with Andromeda, use these commands:-
+
+```bash
+Andromeda> wifiaudit
+Andromeda:wifiaudit> portscan
+```
+
+After doing so, enter the host to be scanned (such as 192.168.1.x etc.)
+
+```bash
+Host to be scanned> 192.168.1.1
+```
+
+The scan may take a while so go have a coffee break and come back to it. The open ports will be displayed as the open port has been scanned. After the scan completes, the amount of time taken will be written too.
+
+## Twitter Scraping
 
 First lets start with twitter scraping. To start the twitter scraping module do:
 
@@ -63,7 +81,7 @@ Press enter and watch Andromeda magically work and come up with results.
 
 Some errors may pop up so check the fixes over [here](https://github.com/FluffySnowman/projectAndromeda/blob/master/errors.md)
 
-#### Google Scraping
+## Google Scraping
 
 To start the google scraper use this command:
 
@@ -73,7 +91,7 @@ Andromeda> googlescrape
 
 You will be prompted with what to scrape for. After typing in your choice press enter and wait for the results.
 
-#### Youtube to mp3 downloading
+## Youtube to mp3 downloading
 
 To start the youtube to mp3 downloading function use this command:
 
@@ -87,7 +105,7 @@ NOTE:- It will take a variable amount of time to download depeding on your inter
 
 The download will be saved as a '.mp3' file in the current directory/folder that you are in- that is the projectAndromeda folder that you had cloned earlier unless you have made changes to it.
 
-#### Using the shell
+## Using the shell
 
 To start the shell use this command:
 
