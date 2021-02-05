@@ -3,11 +3,12 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlencode, urlparse, parse_qs
 from lxml.html import fromstring
 from requests import get
+from socket import *
+from colorama import Fore, Back, Style
 import socket
 import os
 import subprocess
 import time
-from colorama import Fore, Back, Style
 import requests 
 import random
 import re
@@ -15,6 +16,7 @@ import twint
 import sys
 import youtube_dl
 import signal
+import time
 
 
 #GLOBAL VARIABLES AND FUNCTIONS#
@@ -132,8 +134,20 @@ while 1 < 2:
             elif wifiauditinput == "portscan":
 
                 scanportsinput = input("Host to be scanned> ")
+                startTime = time.time()
+                t_IP = gethostbyname(scanportsinput)
+                print('Starting scan on host: ', t_IP)
+                print("(This may take a while ... )")
+   
+                for i in range(50, 500):
+                    s = socket(AF_INET, SOCK_STREAM)
+      
+                    conn = s.connect_ex((t_IP, i))
+                    if(conn == 0) :
+                        print ('Port %d: OPEN' % (i,))
+                    s.close()
+                print('Time taken:', time.time() - startTime)
 
-                
 
 
 
