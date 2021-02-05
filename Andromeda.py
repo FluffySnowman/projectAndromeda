@@ -87,7 +87,7 @@ while 1 < 2:
 
     elif (input1 == "wifiaudit"):
 
-
+        """
         print("killing all network processes in 5 seconds.CNTL+C TO STOP")
         print(5)
         time.sleep(1)
@@ -119,6 +119,22 @@ while 1 < 2:
             print(output)
         else:
             print("exiting the hackwifi process")
+        """
+
+        while 1 < 2:
+
+            wifiauditinput = input("Andromeda:wifiaudit> ")
+
+            if wifiauditinput == "help":
+
+                print(Fore.GREEN+"WifiAudit commands: portscan"+Fore.RED)
+
+            elif wifiauditinput == "portscan":
+
+                scanportsinput = input("Host to be scanned> ")
+
+                
+
 
 
 
