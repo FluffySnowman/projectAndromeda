@@ -59,6 +59,8 @@ Andromeda:wifiaudit> portscan
 
 After doing so, enter the host to be scanned (such as 192.168.1.x etc.)
 
+Then enter(integers only) the lower range of ports to be scanned such as 80 and then the higher range such as 8080 etc.
+
 ```bash
 Host to be scanned> 192.168.1.1
 ```

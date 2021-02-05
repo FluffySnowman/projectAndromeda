@@ -135,24 +135,26 @@ while 1 < 2:
             elif wifiauditinput == "portscan":
 
                 scanportsinput = input("Host to be scanned> ")
+                portsforscan1 = int(input("Lower range of ports to be scanned(INTEGER ONLY): "))
+                portsforscan2 = int(input("Higher range of ports to be scanned(INTEGER ONLY): "))
 
                 t_IP = gethostbyname(scanportsinput)
 
                 print('Starting scan on host: ', t_IP)
-                print(Fore.CYAN + "RANGE: 1 - 500" + Fore.RED)
+                print(Fore.CYAN + "RANGE: " + portsforscan1 + " - " + portsforscan2 + Fore.RED)
                 print("(This may take a while ... )")
 
                 startTime = time.time()
 
-                for i in range(1, 500):
+                for i in range(portsforscan1, portsforscan2):
                     s = socket(AF_INET, SOCK_STREAM)
       
                     conn = s.connect_ex((t_IP, i))
                     if(conn == 0) :
-                        print(Fore.MAGENTA + 'PORT %d: IS OPEN' % (i,) + Fore.RED)
+                        print(Fore.MAGENTA + 'PORT %d: IS OPEN' % (i,))
                     s.close()
 
-                print('Time taken:', time.time() - startTime)
+                print('Time taken:', time.time() - startTime + Fore.RED)
             
             elif wifiauditinput == "exit":
                 print(Fore.LIGHTBLUE_EX+"Exiting wifi audit module"+Fore.RED)
