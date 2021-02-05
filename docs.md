@@ -63,7 +63,7 @@ After doing so, enter the host to be scanned (such as 192.168.1.x etc.)
 Host to be scanned> 192.168.1.1
 ```
 
-The scan may take a while so go have a coffee break and come back to it. The open ports will be displayed as the open port has been scanned. After the scan completes, the amount of time taken will be written too.
+The scan may take a while so go have a coffee break and come back to it. The open ports will be displayed as the open port has been scanned. After the scan completes, the amount of time taken will be displayed too.
 
 ## Twitter Scraping
 
