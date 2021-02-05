@@ -5,7 +5,6 @@ from lxml.html import fromstring
 from requests import get
 from socket import *
 from colorama import Fore, Back, Style
-import socket
 import os
 import subprocess
 import time
@@ -25,6 +24,8 @@ import time
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
     sys.exit(0)
+
+"""socket.setdefaulttimeout(0.25)"""
 
 
 stdout_fileno = sys.stdout
@@ -135,21 +136,22 @@ while 1 < 2:
 
                 scanportsinput = input("Host to be scanned> ")
 
-                startTime = time.time()
                 t_IP = gethostbyname(scanportsinput)
 
                 print('Starting scan on host: ', t_IP)
-                print(Fore.CYAN + "RANGE: 50 - 500" + Fore.RED)
+                print(Fore.CYAN + "RANGE: 1 - 500" + Fore.RED)
                 print("(This may take a while ... )")
 
-                for i in range(50, 500):
+                startTime = time.time()
+
+                for i in range(1, 500):
                     s = socket(AF_INET, SOCK_STREAM)
       
                     conn = s.connect_ex((t_IP, i))
                     if(conn == 0) :
-                        print ('PORT %d: IS OPEN' % (i,))
+                        print(Fore.MAGENTA + 'PORT %d: IS OPEN' % (i,) + Fore.RED)
                     s.close()
-                    
+
                 print('Time taken:', time.time() - startTime)
             
             elif wifiauditinput == "exit":
