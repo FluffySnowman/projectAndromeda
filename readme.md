@@ -7,6 +7,7 @@ Find fixes to errors [here](https://github.com/FluffySnowman/projectAndromeda/bl
 
 ### Requirements
 
+python 3 and python 2(for the wifi auditing module)
 
 ### Installation
 

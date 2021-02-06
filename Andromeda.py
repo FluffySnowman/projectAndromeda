@@ -130,7 +130,7 @@ while 1 < 2:
 
             if wifiauditinput == "help":
 
-                print(Fore.GREEN+"WifiAudit commands: portscan"+Fore.RED)
+                print(Fore.GREEN+"WifiAudit commands: portscan, networkscan, exit"+Fore.RED)
 
             elif wifiauditinput == "portscan":
 
@@ -156,6 +156,14 @@ while 1 < 2:
 
                 print('Time taken:', time.time() - startTime, "Seconds")
                 print(Fore.RED)
+
+            elif wifiauditinput == "networkscan":
+
+                networkscanrange = input("Range to scan: ")
+
+                run_string = f'python2 network_scan.py -t'
+
+
             
             elif wifiauditinput == "exit":
                 print(Fore.LIGHTBLUE_EX+"Exiting wifi audit module"+Fore.RED)
