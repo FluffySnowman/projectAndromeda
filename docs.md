@@ -7,7 +7,7 @@ Project Andromeda is a tool that can be used to collect data efficiently and eas
 
 First a shell is required to run Andromeda (on windows: cmd or powershell, on mac: terminal, on your linux distribution: use the respective terminal application)
 
-Python version 3 or above is required (3.8 or above if possible).
+Python version 3 or above is required (3.8 or above if possible) and python 2 for the wifi audit module.
 
 For the wifi auditing tools your device must have the aircrack-ng binaries installed.
 
