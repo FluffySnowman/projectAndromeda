@@ -78,8 +78,9 @@ Andromeda> wifiaudit
 Andromeda:wifiaudit> networkscan
 ```
 
-Then enter the range to scan (192.168.1.1/24 etc.)
+Then enter the range to scan (192.168.1.1/24 etc.) and wait for the results. 
 
+The results will be shown in a table format after scanning -> IP ADDRESS (space) MAC ADDRESS
 
 
 ## Twitter Scraping

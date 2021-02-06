@@ -27,7 +27,7 @@ def scan(ip):
     return result
 
 def display_result(result):
-    print("-----------------------------------\nIP ADDRESS\tMAC Address\n-----------------------------------")
+    print("-----------------------------------\nIP ADDRESS\tMAC ADDRESS\n-----------------------------------")
     for i in result:
         print("{}\t{}".format(i["ip"], i["mac"]))
 
