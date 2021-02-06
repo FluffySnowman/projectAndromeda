@@ -71,7 +71,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"help: shows this list\nshell: opens a shell with the default shell of your operating system(i.e:- bash, cmd)\nwifiaudit:, googlescrape, twitterscrape, yt-download, cls, exit"+Fore.RED)
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"help: shows this list\nshell: opens a shell with the default shell of your operating system(i.e:- bash, cmd)\nwifiaudit:-\n          |-networkscan: scans for ip's and mac addresses on a network\n          |-portscan: scans for open ports of a host\ngooglescrape: scrapes google for data\ntwitterscrape, yt-download, cls, exit"+Fore.RED)
 
 
     #####################################
