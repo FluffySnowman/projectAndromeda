@@ -9,8 +9,6 @@ First a shell is required to run Andromeda (on windows: cmd or powershell, on ma
 
 Python version 3 or above is required (3.8 or above if possible) and python 2 for the wifi audit module.
 
-For the wifi auditing tools your device must have the aircrack-ng binaries installed.
-
 Your device must have libxml2 and libxslt installed for for the python module lxml to function properly.
 
 Next you must install the required python modules. To do this do:-
@@ -20,7 +18,7 @@ git clone https://github.com/FluffySnowman/projectAndromeda.git
 
 cd projectAndromeda
 
-python3 -m pip install -r requirements.txt
+sudo python3 -m pip install -r requirements.txt
 ```
 
 ### Executing
@@ -32,7 +30,7 @@ Once that is done you can simple run the program(after cloning the repository) l
 ```bash
 cd projectAndromeda
 
-python3 Andromeda.py
+sudo python3 Andromeda.py
 ```
 
 ### Exiting
