@@ -141,7 +141,7 @@ while 1 < 2:
                 t_IP = gethostbyname(scanportsinput)
 
                 print('Starting scan on host: ', t_IP)
-                print(Fore.CYAN + "RANGE: " + portsforscan1 + " - " + portsforscan2 + Fore.RED)
+                print(Fore.CYAN + "RANGE: " + str(portsforscan1) + " - " + str(portsforscan2) + Fore.RED)
                 print("(This may take a while ... )")
 
                 startTime = time.time()
@@ -154,7 +154,8 @@ while 1 < 2:
                         print(Fore.MAGENTA + 'PORT %d: IS OPEN' % (i,))
                     s.close()
 
-                print('Time taken:', time.time() - startTime + Fore.RED)
+                print('Time taken:', time.time() - startTime)
+                print(Fore.RED)
             
             elif wifiauditinput == "exit":
                 print(Fore.LIGHTBLUE_EX+"Exiting wifi audit module"+Fore.RED)
