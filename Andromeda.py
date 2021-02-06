@@ -135,8 +135,8 @@ while 1 < 2:
             elif wifiauditinput == "portscan":
 
                 scanportsinput = input("Host to be scanned> ")
-                portsforscan1 = int(input("Lower range of ports to be scanned(INTEGER ONLY): "))
-                portsforscan2 = int(input("Higher range of ports to be scanned(INTEGER ONLY): "))
+                portsforscan1 = int(input("From port number(INTEGER ONLY): "))
+                portsforscan2 = int(input("To port number(INTEGER ONLY): "))
 
                 t_IP = gethostbyname(scanportsinput)
 
