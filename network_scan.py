@@ -28,8 +28,11 @@ def scan(ip):
 
 def display_result(result):
     print("-----------------------------------\nIP ADDRESS\tMAC ADDRESS\n-----------------------------------")
+    x = 0
     for i in result:
+        x = x+1
         print("{}\t{}".format(i["ip"], i["mac"]))
+    print "Total targets: ", x
 
 
 options = get_args()
