@@ -48,6 +48,8 @@ Exiting Andromeda
 
 ## Wifi auditing
 
+NOTE:- MAKE SURE YOU HAVE SUPERUSER PRIVILEGES TO RUN THE WIFI AUDIT MODULE
+
 #### Port Scanning
 
 To scan ports with Andromeda, use these commands:-
@@ -66,6 +68,19 @@ Host to be scanned> 192.168.1.1
 ```
 
 The scan may take a while so go have a coffee break and come back to it. The open ports will be displayed as the open port has been scanned. After the scan completes, the amount of time taken will be displayed too.
+
+#### Network Scanning
+
+To run the network scanning module you need python 2. Use this command in Andromeda to run the network scanning module:-
+
+```bash
+Andromeda> wifiaudit
+Andromeda:wifiaudit> networkscan
+```
+
+Then enter the range to scan (192.168.1.1/24 etc.)
+
+
 
 ## Twitter Scraping
 
