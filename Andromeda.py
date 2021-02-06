@@ -154,7 +154,7 @@ while 1 < 2:
                         print(Fore.MAGENTA + 'PORT %d: IS OPEN' % (i,))
                     s.close()
 
-                print('Time taken:', time.time() - startTime)
+                print('Time taken:', time.time() - startTime, "Seconds")
                 print(Fore.RED)
             
             elif wifiauditinput == "exit":
