@@ -160,7 +160,7 @@ while 1 < 2:
             elif wifiauditinput == "networkscan":
 
                 networkscanrange = input("Range to scan: ")
-                run_string = f'sudo python2 network_scan.py -t {networkscanrange}'
+                run_string = f'sudo python network_scan.py -t {networkscanrange}'
 
                 print(Fore.BLUE + "Command to execute in python2 --> " + run_string + Fore.RED)
 
