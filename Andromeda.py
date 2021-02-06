@@ -130,7 +130,7 @@ while 1 < 2:
 
             if wifiauditinput == "help":
 
-                print(Fore.GREEN+"WifiAudit commands: portscan, networkscan, exit"+Fore.RED)
+                print(Fore.GREEN+"WifiAudit commands: networkscan, portscan, exit"+Fore.RED)
 
             elif wifiauditinput == "portscan":
 
