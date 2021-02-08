@@ -159,10 +159,12 @@ while 1 < 2:
 
             elif wifiauditinput == "networkscan":
 
-                networkscanrange = input("Range to scan: ")
-                run_string = f'sudo python network_scan.py -t {networkscanrange}'
+                python2inputcommand = input("Python 2 command: ")
 
-                print(Fore.BLUE + "Command to execute in python2 --> " + run_string + Fore.RED)
+                networkscanrange = input("Range to scan: ")
+                run_string = f'{python2inputcommand} network_scan.py -t {networkscanrange}'
+
+                print(Fore.BLUE + "Command to execute --> " + run_string + Fore.RED)
 
                 stream = os.popen(run_string)
                 output = stream.read()

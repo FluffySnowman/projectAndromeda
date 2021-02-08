@@ -76,7 +76,7 @@ Andromeda> wifiaudit
 Andromeda:wifiaudit> networkscan
 ```
 
-Then enter the range to scan (192.168.1.1/24 etc.) and wait for the results. 
+Then enter the command used for python 2 and the range to scan (192.168.1.1/24 etc.) and wait for the results. 
 
 ```bash
 Range to scan: 192.168.1.1/24
