@@ -74,7 +74,7 @@ while 1 < 2:
     if (input1 == "help"):
 
 
-        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"help: shows this list\n\nshell: opens a shell with the default shell of your operating system(i.e:- bash, cmd)\n\nwifiaudit:-\n          |-networkscan: scans for ip's and mac addresses on a network\n          |-portscan: scans for open ports of a host\n\ndnscrawl: find dns records\n\ngooglescrape: scrapes google for data\n\ntwitterscrape:-\n              |-Followers: Scrapes twitter for followers of an account\n              |-Profile Information: scrapes a user's profile information\n              |-Tweets: collects a certain amount of tweets from an account\n\nyt-download: Download youtube videos to mp3 from a terminal\n\ncls: clears the screen\n\nexit: Exits Andromeda"+Fore.RED)
+        print(Fore.MAGENTA+"Find the docs at https://github.com/FluffySnowman/projectAndromeda/blob/master/docs.md\n\n"+Fore.RED+Fore.GREEN+"help: shows this list\n\nshell: opens a shell with the default shell of your operating system(i.e:- bash, cmd)\n\nwifiaudit:-\n          |-networkscan: scans for ip's and mac addresses on a network\n          |-portscan: scans for open ports of a host\n\ndnscrawl: find dns records and more\n\ngooglescrape: scrapes google for data\n\ntwitterscrape:-\n              |-Followers: Scrapes twitter for followers of an account\n              |-Profile Information: scrapes a user's profile information\n              |-Tweets: collects a certain amount of tweets from an account\n\nyt-download: Download youtube videos to mp3 from a terminal\n\ncls: clears the screen\n\nexit: Exits Andromeda"+Fore.RED)
 
 
     #####################################
