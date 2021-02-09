@@ -190,18 +190,29 @@ while 1 < 2:
 
     elif (input1 == "dnscrawl"):
         dns_crawl_input1 = input("Host to lookup: ")
-        #ns_l1 = socket,gethostbyname(dns_crawl_input1)
-        #print(ns_l1)
-        result_A = dns.resolver.resolve(dns_crawl_input1, 'A')
-        result_CNAME = dns.resolver.resolve(dns_crawl_input1, 'CNAME')
-        results_MX = dns.resolver.query(dns_crawl_input1, 'MX')
-        for ipval in result_A:
-            print('IP == ', ipval.to_text())
-        for cnameval in result_CNAME:
-            print('CNAME == ', cnameval.target)
-        for exdata in results_MX:
-            print('MX == ', exdata.exchange.text())
+            #ns_l1 = socket,gethostbyname(dns_crawl_input1)
+            #print(ns_l1)
 
+
+        try:
+            result_A = dns.resolver.resolve(dns_crawl_input1, 'A')
+        except:
+            print("Error finding 'A' records")
+
+
+        try:
+            result_CNAME = dns.resolver.resolve(dns_crawl_input1, 'CNAME')
+        except:
+            print("Error finding 'CNAME' records")
+
+            
+        #results_MX = dns.resolver.resolve(dns_crawl_input1, 'MX')
+        for ipval in result_A:
+            print('IP     > ', ipval.to_text())
+        for cnameval in result_CNAME:
+            print('CNAME  > ', cnameval.target)
+            #for exdata in results_MX:
+            #    print('MX == ', exdata.exchange.text())
 
 
     ####################################
