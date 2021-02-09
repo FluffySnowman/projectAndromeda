@@ -194,10 +194,13 @@ while 1 < 2:
         #print(ns_l1)
         result_A = dns.resolver.resolve(dns_crawl_input1, 'A')
         result_CNAME = dns.resolver.resolve(dns_crawl_input1, 'CNAME')
+        results_MX = dns.resolver.query(dns_crawl_input1, 'MX')
         for ipval in result_A:
             print('IP == ', ipval.to_text())
         for cnameval in result_CNAME:
             print('CNAME == ', cnameval.target)
+        for exdata in results_MX:
+            print('MX == ', exdata.exchange.text())
 
 
 
