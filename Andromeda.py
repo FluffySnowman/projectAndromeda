@@ -192,9 +192,12 @@ while 1 < 2:
         dns_crawl_input1 = input("Host to lookup: ")
         #ns_l1 = socket,gethostbyname(dns_crawl_input1)
         #print(ns_l1)
-        result = dns.resolver.resolve(dns_crawl_input1, 'A')
-        for ipval in result:
+        result_A = dns.resolver.resolve(dns_crawl_input1, 'A')
+        result_CNAME = dns.resolver.resolve(dns_crawl_input1, 'CNAME')
+        for ipval in result_A:
             print('IP == ', ipval.to_text())
+        for cnameval in result_CNAME:
+            print('CNAME == ', cnameval.target)
 
 
 
