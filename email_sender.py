@@ -2,8 +2,7 @@ import mechanize
 br = mechanize.Browser()
 to = raw_input("Recipient address: ")
 subject = raw_input("Subject: ")
-print "Message: "
-message = raw_input("Enter the message and press enter> ")
+message = raw_input("> ")
 url = "http://anonymouse.org/anonemail.html"
 headers = "Mozilla/4.0 (compatible; MSIE 5.0; AOL 4.0; Windows 95; c_athome)"
 br.addheaders = [('User-agent', headers)]
@@ -21,8 +20,7 @@ br.form['subject'] = subject
 br.form['text'] = message
 result = br.submit()
 response = br.response().read()
-response
-if "The e-mail has been sent anonymously!" in response:
+if "The e-mail has been sent" in response:
     print "The email has been sent successfully :)"
 else:
     print "Sending email failed"

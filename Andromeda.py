@@ -16,6 +16,7 @@ import sys
 import youtube_dl
 import signal
 import time
+import socket
 
 
 #GLOBAL VARIABLES AND FUNCTIONS#
@@ -178,6 +179,17 @@ while 1 < 2:
             else:
                 print("Enter valid commands please")
 
+
+
+    ####################################
+    #######dns crawler##################
+    ####################################
+
+
+    elif (input1 == "dnscrawl"):
+        dns_crawl_input1 = input("Host to lookup: ")
+        ns_l1 = socket,gethostbyname(dns_crawl_input1)
+        print(ns_l1)
 
 
 
