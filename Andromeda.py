@@ -17,6 +17,8 @@ import youtube_dl
 import signal
 import time
 import socket
+#import dnspython as dns
+import dns.resolver
 
 
 #GLOBAL VARIABLES AND FUNCTIONS#
@@ -188,8 +190,11 @@ while 1 < 2:
 
     elif (input1 == "dnscrawl"):
         dns_crawl_input1 = input("Host to lookup: ")
-        ns_l1 = socket,gethostbyname(dns_crawl_input1)
-        print(ns_l1)
+        #ns_l1 = socket,gethostbyname(dns_crawl_input1)
+        #print(ns_l1)
+        result = dns.resolver.resolve(dns_crawl_input1, 'A')
+        for ipval in result:
+            print('IP == ', ipval.to_text())
 
 
 
