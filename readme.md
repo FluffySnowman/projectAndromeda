@@ -11,6 +11,8 @@ python 3 and python 2(for the wifi auditing module)
 
 ### Installation
 
+(Use a terminal with administrator privileges on windows)
+
 ```bash
 git clone https://github.com/FluffySnowman/projectAndromeda.git
 
