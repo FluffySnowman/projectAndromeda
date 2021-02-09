@@ -11,7 +11,21 @@ python 3 and python 2(for the wifi auditing module)
 
 ### Installation
 
-(Use a terminal with administrator privileges on windows)
+#### Windows
+
+(On a terminal with administrator privileges)
+
+```bash
+git clone https://github.com/FluffySnowman/projectAndromeda.git
+
+cd projectAndromeda
+
+python3 -m pip install -r requirements.txt
+
+python -m pip install -r requirements2.txt
+```
+
+#### Linux
 
 ```bash
 git clone https://github.com/FluffySnowman/projectAndromeda.git
@@ -22,9 +36,18 @@ sudo python3 -m pip install -r requirements.txt
 
 sudo python -m pip install -r requirements2.txt
 ```
+
 ### Executing
 
-Using a shell as administrator/root/superuser use python to run andromeda.
+#### Windows
+
+(Using a terminal with administrator privileges)
+
+```bash
+python3 Andromeda.py
+```
+
+#### Linux
 
 ```bash
 sudo python3 Andromeda.py
