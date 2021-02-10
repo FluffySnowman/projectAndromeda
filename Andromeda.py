@@ -193,21 +193,28 @@ while 1 < 2:
         try:
             #ns_l1 = socket,gethostbyname(dns_crawl_input1)
             #print(ns_l1)
+
             try:
                 result_A = dns.resolver.resolve(dns_crawl_input1, 'A')
             except:
-                print("Error finding 'A' records")
+                print("Error finding some 'A' records")
+
             try:
                 result_CNAME = dns.resolver.resolve(dns_crawl_input1, 'CNAME')
             except:
-                print("Error finding 'CNAME' records")
-            #results_MX = dns.resolver.resolve(dns_crawl_input1, 'MX')
+                print("Error finding some 'CNAME' records")
+
+            try:
+                results_MX = dns.resolver.resolve(dns_crawl_input1, 'MX')
+            except:
+                print("Error finding some 'MX' records")
+
             for ipval in result_A:
                 print('IP     > ', ipval.to_text())
             for cnameval in result_CNAME:
                 print('CNAME  > ', cnameval.target)
-            #for exdata in results_MX:
-            #    print('MX == ', exdata.exchange.text())
+            for exdata in results_MX:
+                print('MX == ', exdata.exchange.text())
         except:
             print("Error while finding some dns records. Try a different host")
 
