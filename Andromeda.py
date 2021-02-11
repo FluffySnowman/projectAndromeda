@@ -171,7 +171,7 @@ while 1 < 2:
 
                 stream = os.popen(run_string)
                 output = stream.read()
-                print(output)
+                print(Fore.LIGHTGREEN_EX + output + Fore.RED)
 
             
             elif wifiauditinput == "exit":
