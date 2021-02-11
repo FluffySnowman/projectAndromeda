@@ -150,7 +150,7 @@ while 1 < 2:
                 startTime = time.time()
 
                 for i in range(portsforscan1, portsforscan2):
-                    s = socket(AF_INET, SOCK_STREAM)
+                    s = socket.socket(AF_INET, SOCK_STREAM)
       
                     conn = s.connect_ex((t_IP, i))
                     if(conn == 0) :
