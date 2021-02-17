@@ -353,9 +353,7 @@ while 1 < 2:
             twintvariable.Username = twint_username_option4
             
 
-
         print()
-
 
         print(Fore.RED)  
 
