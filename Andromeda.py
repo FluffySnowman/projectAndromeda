@@ -269,8 +269,8 @@ while 1 < 2:
         while 1 < 2:
             print("\n1:- Followers")
             print("2:- Profile Information")
-            print("3:- Tweets")
-            print("4:- option4")
+            print("3:- Tweets from profile")
+            print("4:- [IN DEVELOPMENT] Any tweets from twitter")
             print("5:- Exit\n")
             twint_search_option = input("Select a number to scrape for: ")
 
@@ -349,8 +349,18 @@ while 1 < 2:
 
 
             twintvariable = twint.Config()
-            twint_username_option4 = input("Username: ")
+            twint_username_option4 = input("Keyword: ")
             twintvariable.Username = twint_username_option4
+            twintsearchvar = twint.Search(twint_username_option4)
+            twintvariable.Limit = 10
+
+            twint.run.Search(twintvariable)
+
+            sys.stdout.close()
+
+            sys.stdout = stdout_fileno
+            
+
             
 
         print()
