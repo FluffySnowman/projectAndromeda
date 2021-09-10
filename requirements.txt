@@ -8,3 +8,4 @@ twint
 numpy==1.19.3
 youtube_dl
 dnspython
+scapy-python3
