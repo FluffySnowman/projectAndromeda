@@ -1,10 +1,9 @@
-import scapy as scapyarp
-import scapy as scapyether
+import scapy.all as scapy
   
-request = scapyarp()
+request = scapy.ARP()
   
 request.pdst = 'x'
-broadcast = scapyether()
+broadcast = scapy.Ether()
   
 broadcast.dst = 'ff:ff:ff:ff:ff:ff'
   

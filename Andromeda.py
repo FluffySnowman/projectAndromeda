@@ -173,6 +173,10 @@ while 1 < 2:
                 output = stream.read()
                 print(Fore.LIGHTGREEN_EX + output + Fore.RED)
 
+
+
+                ###ADDING NEW NETWORK SCANNING METHODS ###
+
             
             elif wifiauditinput == "exit":
                 print(Fore.LIGHTBLUE_EX+"Exiting wifi audit module"+Fore.RED)
