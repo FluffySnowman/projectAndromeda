@@ -1,5 +1,5 @@
-from tkinter import *
 from __future__ import unicode_literals
+from tkinter import *
 from bs4 import BeautifulSoup
 from urllib.parse import urlencode, urlparse, parse_qs
 from lxml.html import fromstring
@@ -28,11 +28,16 @@ import dns.resolver
 window = Tk()
 
 window.title("Project Andromeda")
-window.geometry("500x500+10+20")
+window.geometry("400x100+10+20")
 window.configure(bg='black')
 
 label1 = Label(window, text="Enter command", bg='black', fg='green')
-label1.pack(side=LEFT)
+label1.pack(side=TOP)
 
+inputbox1 = Entry(window, bd=5)
+inputbox1.pack(side=TOP)
+
+button1 = Button(window, text="Execute", bg='white', fg='black')
+button1.pack(side=RIGHT)
 
 window.mainloop()
