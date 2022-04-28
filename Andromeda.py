@@ -162,10 +162,8 @@ while 1 < 2:
 
             elif wifiauditinput == "networkscan":
 
-                python2inputcommand = input("Python 2 command: ")
-
                 networkscanrange = input("Range to scan: ")
-                run_string = f'{python2inputcommand} network_scan.py -t {networkscanrange}'
+                run_string = f'python3 network_scan.py -t {networkscanrange}'
 
                 print(Fore.BLUE + "Command to execute --> " + run_string + Fore.RED)
 
