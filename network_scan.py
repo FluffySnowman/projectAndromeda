@@ -34,7 +34,6 @@ def display_result(result):
     for i in result:
         print("{}\t{}".format(i["ip"], i["mac"]))
   
-
 options = get_args()
 scanned_output = scan(options.target)
 display_result(scanned_output)
